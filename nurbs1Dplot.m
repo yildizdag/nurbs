@@ -15,7 +15,7 @@ for kk = 1:Nurbs1D.numpatch
         iu = findspan(Nurbs1D.number{kk}(1),Nurbs1D.order{kk}(1)-1,uu(r),Nurbs1D.knots.U{kk});
         dNu = dersbasisfuns(iu,uu(r),Nurbs1D.order{kk}(1)-1,0,Nurbs1D.knots.U{kk});
         CP = Nurbs1D.cPoints{kk}(:,iu-Nurbs1D.order{kk}(1)+1:iu);
-        [~,dC] = der1DRatBasisFuns(dNu,Nurbs1D.order{kk}(1),CP,0);
+        [~,dC] = derRat1DBasisFuns(dNu,Nurbs1D.order{kk}(1),CP,0);
         X0(r) = dC(1,1); Y0(r) = dC(2,1); Z0(r) = dC(3,1);
     end
     %

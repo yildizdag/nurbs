@@ -1,4 +1,4 @@
-function [dR,dC] = der1DRatBasisFuns(dNu,o,CP,du)
+function [dR,dC] = derRat1DBasisFuns(dNu,o,CP,du)
     w = CP(4,:)';
     wders = dNu*w;
     dR = zeros(o,du+1);
