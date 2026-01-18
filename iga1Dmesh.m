@@ -36,10 +36,9 @@ for i = 1:Nurbs1D.numpatch
     Nurbs1D.nel{i} = nel;
     Nurbs1D.nnp{i} = nnp;
     Nurbs1D.nen{i} = nen;
-    %
 end
 %ID
-eqn = 0; %Start counting degrees of freedoms
+eqn = 0;
 for i = 1:Nurbs1D.numpatch
     NNP = Nurbs1D.nnp{i};
     ID = zeros(Nurbs1D.local_dof,NNP);

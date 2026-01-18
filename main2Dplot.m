@@ -5,7 +5,7 @@
 clc; clear; close all;
 addpath('geometry')
 % Read the Geometry imported from Rhino:
-FileName = 'nurbs_example2_';
+FileName = 'iga2D_example_';
 numPatch = 1; %Enter # Patches
 % Degrees of Freedom per each node:
 local_dof = 1;

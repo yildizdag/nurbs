@@ -4,7 +4,7 @@
 clc; clear; close all;
 addpath('geometry')
 % Read the Geometry:
-FileName = 'iga1D_example';
+FileName = 'iga1D_example_';
 numPatch = 1; %Enter #Patches
 % DOF per each control point:
 local_dof = 1;
