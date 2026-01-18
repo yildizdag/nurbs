@@ -1,7 +1,7 @@
 function nurbs1Dplot(Nurbs1D,control_net,sampling)
-%---------------------------------
-% Plots 2-D NURBS Patches
-%---------------------------------
+%------------------------
+% Plots 1-D NURBS Patches
+%------------------------
 figure;
 for kk = 1:Nurbs1D.numpatch
     %Sampling:
